@@ -1,70 +1,87 @@
-<!DOCTYPE html><html class="light" lang="es" style="width: 390px; height: 2222px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><title>UASLP - Test de Consumo Responsable</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "surface-container": "#f0edec", "surface-container-highest": "#e5e2e1", "tertiary": "#170e00", "on-tertiary-container": "#a98742", "primary-fixed": "#dae2ff", "inverse-primary": "#b2c5ff", "on-secondary-fixed-variant": "#574500", "surface": "#fcf9f8", "on-secondary-fixed": "#241a00", "secondary-fixed-dim": "#e9c349", "on-tertiary-fixed": "#261900", "surface-container-low": "#f6f3f2", "deep-black": "#0A0A0A", "outline": "#757681", "on-surface": "#1c1b1b", "secondary-fixed": "#ffe088", "navy-dim": "#001336", "on-primary-fixed-variant": "#2d447f", "surface-container-high": "#ebe7e7", "inverse-on-surface": "#f3f0ef", "primary-fixed-dim": "#b2c5ff", "gold-dim": "#997A23", "surface-dim": "#dcd9d9", "tertiary-container": "#322200", "surface-bright": "#fcf9f8", "tertiary-fixed": "#ffdea5", "tertiary-fixed-dim": "#e9c176", "pure-white": "#FFFFFF", "surface-tint": "#455c99", "background": "#fcf9f8", "primary-container": "#00205b", "on-tertiary-fixed-variant": "#5d4201", "on-surface-variant": "#444650", "gold-light": "#F6E7B9", "on-primary-container": "#738aca", "outline-variant": "#c5c6d1", "on-tertiary": "#ffffff", "on-background": "#1c1b1b", "error-container": "#ffdad6", "secondary": "#735c00", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-error-container": "#93000a", "success-mint": "#15803D", "inverse-surface": "#313030", "on-primary-fixed": "#001849", "surface-cream": "#FDFBF7", "secondary-container": "#fed65b", "surface-variant": "#e5e2e1", "error": "#ba1a1a", "primary": "#000d2f", "on-secondary-container": "#745c00", "on-error": "#ffffff", "error-crimson": "#B91C1C" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2rem", "gutter": "1rem", "margin": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem" }, fontFamily: { "title-md": ["Bricolage Grotesque"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Bricolage Grotesque"], "label-sm": ["Bricolage Grotesque"], "display-lg-mobile": ["Bricolage Grotesque"], "label-lg": ["Bricolage Grotesque"], "headline-lg-mobile": ["Bricolage Grotesque"], "headline-lg": ["Bricolage Grotesque"], "label-md": ["Bricolage Grotesque"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Bricolage Grotesque"] }, fontSize: { "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "700" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;background-color:#fcf9f8;color:#1c1b1b;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 24;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-primary-container shadow-[0_4px_16px_rgba(0,32,91,0.2)]"><div class="max-w-lg mx-auto w-full px-margin-mobile py-2.5 flex items-center justify-between gap-2"><div class="flex items-center gap-2 min-w-0"><button aria-label="Regresar" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/10 text-pure-white hover:bg-white/20 transition-all active:translate-y-0.5 flex-shrink-0" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><div class="w-10 h-11 bg-pure-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 shadow-sm"><img alt="Escudo UASLP" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACDGo1bVGqCcQsgI_1U2Ju_KkBX1k-TOCTQwkbGKj3jcdOJQHWAZgR4OGZ2wjJ1dxOku9-nyvIrF-WKs1nR4usoub_Ue9hvd31cBExpuimEJGTOAm_kqg3uLNbi48Cj9wr0Cburpqhvvr2YGKmgPC7fKEn-L2Pu-tO25teXd6s6y9qFBCnSpHeas1V5ZI9h_8ja8zfMlPniB4sE5ufwEs5wzn9lnWJMqlh2PEW5TKtH3TtlzwJPr9e6JQc225pjrVLPg"></div><div class="w-px h-8 bg-white/20 flex-shrink-0"></div><div class="w-10 h-10 bg-pure-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 shadow-sm"><img alt="Agenda Ambiental UASLP" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6OEI6zMaG12T-akNarB-FkGkimC95mt0gXM4Am3dbYmFgdK44s_TTWuRn4pK0paaeU_VfKm6l4iZWuQTCBm-6jQ4DUIQQBNIDr6PUzIA0gtcQMic5nQ8mIme-J9NNS2IAY-hu2q0vuLIMSIucIbhZvX8LkkWL4XWb_qsMwbOAvICK-3gf3_uJ-pitbhQyq11hNMyRznWfolo5HQzGsfEriPEngrqp-UPhHwLo1EezVobKesOpY8RC4YxwF6i7gW4s8g"></div></div><div class="text-right min-w-0 flex-1"><span class="block font-label-sm text-label-sm uppercase tracking-widest text-pure-white truncate">TEST DE CONSUMO</span><span class="block font-headline-md text-headline-md text-secondary-fixed uppercase leading-none tracking-tight truncate">RESPONSABLE</span></div></div><div class="h-1 w-full bg-secondary-fixed-dim"></div></header><main class="flex-1 flex flex-col relative w-full max-w-lg mx-auto pt-20 pb-safe bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full pb-8">
-<!-- Cabecera Oficial Superior -->
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>UASLP - Test de Consumo Responsable</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#ffffff", "surface-container": "#f0edec", "surface-container-highest": "#e5e2e1", "tertiary": "#170e00", "on-tertiary-container": "#a98742", "primary-fixed": "#dae2ff", "inverse-primary": "#b2c5ff", "on-secondary-fixed-variant": "#574500", "surface": "#fcf9f8", "on-secondary-fixed": "#241a00", "secondary-fixed-dim": "#e9c349", "on-tertiary-fixed": "#261900", "surface-container-low": "#f6f3f2", "deep-black": "#0A0A0A", "outline": "#757681", "on-surface": "#1c1b1b", "secondary-fixed": "#ffe088", "navy-dim": "#001336", "on-primary-fixed-variant": "#2d447f", "surface-container-high": "#ebe7e7", "inverse-on-surface": "#f3f0ef", "primary-fixed-dim": "#b2c5ff", "gold-dim": "#997A23", "surface-dim": "#dcd9d9", "tertiary-container": "#322200", "surface-bright": "#fcf9f8", "tertiary-fixed": "#ffdea5", "tertiary-fixed-dim": "#e9c176", "pure-white": "#FFFFFF", "surface-tint": "#455c99", "background": "#fcf9f8", "primary-container": "#00205b", "on-tertiary-fixed-variant": "#5d4201", "on-surface-variant": "#444650", "gold-light": "#F6E7B9", "on-primary-container": "#738aca", "outline-variant": "#c5c6d1", "on-tertiary": "#ffffff", "on-background": "#1c1b1b", "error-container": "#ffdad6", "secondary": "#735c00", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-error-container": "#93000a", "success-mint": "#15803D", "inverse-surface": "#313030", "on-primary-fixed": "#001849", "surface-cream": "#FDFBF7", "secondary-container": "#fed65b", "surface-variant": "#e5e2e1", "error": "#ba1a1a", "primary": "#000d2f", "on-secondary-container": "#745c00", "on-error": "#ffffff", "error-crimson": "#B91C1C" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2rem", "gutter": "1rem", "margin": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem" }, fontFamily: { "title-md": ["Bricolage Grotesque"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Bricolage Grotesque"], "label-sm": ["Bricolage Grotesque"], "display-lg-mobile": ["Bricolage Grotesque"], "label-lg": ["Bricolage Grotesque"], "headline-lg-mobile": ["Bricolage Grotesque"], "headline-lg": ["Bricolage Grotesque"], "label-md": ["Bricolage Grotesque"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Bricolage Grotesque"] }, fontSize: { "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "700" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;background-color:#fcf9f8;color:#1c1b1b;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 24;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen">
+<!-- Cabecera Institucional Oficial Homologada -->
+<header class="fixed top-0 w-full z-50 pt-safe bg-white shadow-sm border-b border-surface-container-highest"><div class="max-w-lg mx-auto w-full px-margin-mobile py-2.5 flex items-center justify-between"><img alt="UASLP - Universidad Autónoma de San Luis Potosí" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQZJURi8TxNFt6ZyJsBZa0k1mOv-HksF0WxwhSxojPc9ey0HVr3pZx51QZOcLpKP_sRYgvcxYEN2YEtkZGBYXUfUM1zPHj6ZNg_wnPe0uIvvL16V_ULSef8ZVvGK7S7OHAQ9796Q2CYZOgr6hhsutiLvZz1A69Fe1ZzjBjymSF3Ddn7nvkHNwPtfc9XsNBhU0BVyH2KfWhwkMsCwfOryUZhr4EXV0dZs_lzGjz6JWihBqthivneWQ6XHR7RforRtKyqA"/><img alt="Agenda Ambiental UASLP" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0WxIB425pc7fHGvCKtCMC-JJaKQFByfPmAPNLaXI1k3hOuXGD6MomAElNrlOG2Zc4jcUCQb6CYGHPqQ3b5C1jQeK7JsG-O8oqWLf3b5IFF_63BXwnvhktCGEWR3tpA0NIRgSz7PdePMkBz-OTMrHxULTKqi7yvo-IFbhjUO5AGc6jGiVWMrSONPpdbGLmEHItt796Zi8a2fHOkKPAzbPG8o-9TGXKgHgbqCVyXcCt85Ebt5nlLy_359w4ZyfZjUDZAg"/></div></header>
+<main class="flex-1 flex flex-col relative w-full max-w-lg mx-auto pt-24 pb-safe bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full pb-8">
 <!-- Cinta de Felicitación y Estatus -->
-<div class="flex flex-col items-center text-center px-1 mb-4">
+<div class="flex flex-col items-center text-center px-1 mb-4 mt-2">
 <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-sm mb-2.5">
 <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
 <span class="font-label-sm text-label-sm tracking-wide uppercase">¡Cuestionario Completado! • 10/10 Reactivos</span>
 </div>
 <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary leading-tight mb-1.5">
-      Tu Diagnóstico de Consumo Responsable
-    </h2>
+  Tu Diagnóstico de Consumo Responsable
+</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
-      Con base en tus 10 respuestas analizadas por la Agenda Ambiental UASLP, aquí está tu perfil ambiental y tus superpoderes cotidianos.
-    </p>
+  Con base en tus 10 respuestas analizadas por la Agenda Ambiental UASLP, aquí está tu perfil ambiental y tus recomendaciones para la vida universitaria.
+</p>
 </div>
 <!-- Selector de Perfiles Interactivo -->
 <div class="w-full mb-4">
 <div class="flex items-center justify-between gap-1.5 bg-surface-container-high p-1.5 rounded-xl">
 <button class="flex-1 py-2 px-1 rounded-lg text-center transition-all bg-primary-container text-pure-white shadow-sm flex flex-col items-center" id="tab-btn-1" onclick="selectProfile(1)" type="button">
-<span class="font-label-sm text-label-sm leading-tight uppercase block text-secondary-fixed">Perfil 1</span>
-<span class="font-label-md text-label-md leading-tight truncate w-full">Campeón</span>
+<span class="font-label-sm text-label-sm leading-tight uppercase block text-secondary-fixed">Perfil 1 (36-40)</span>
+<span class="font-label-md text-label-md leading-tight truncate w-full font-bold">Campeón</span>
 </button>
 <button class="flex-1 py-2 px-1 rounded-lg text-center transition-all text-on-surface-variant hover:bg-surface-container flex flex-col items-center" id="tab-btn-2" onclick="selectProfile(2)" type="button">
-<span class="font-label-sm text-label-sm leading-tight uppercase block text-outline">Perfil 2</span>
-<span class="font-label-md text-label-md leading-tight truncate w-full">En Camino</span>
+<span class="font-label-sm text-label-sm leading-tight uppercase block text-outline">Perfil 2 (25-35)</span>
+<span class="font-label-md text-label-md leading-tight truncate w-full font-bold">En Camino</span>
 </button>
 <button class="flex-1 py-2 px-1 rounded-lg text-center transition-all text-on-surface-variant hover:bg-surface-container flex flex-col items-center" id="tab-btn-3" onclick="selectProfile(3)" type="button">
-<span class="font-label-sm text-label-sm leading-tight uppercase block text-outline">Perfil 3</span>
-<span class="font-label-md text-label-md leading-tight truncate w-full">Despertar</span>
+<span class="font-label-sm text-label-sm leading-tight uppercase block text-outline">Perfil 3 (10-24)</span>
+<span class="font-label-md text-label-md leading-tight truncate w-full font-bold">Despertar</span>
 </button>
 </div>
 </div>
 <!-- Tarjeta Principal de Resultado del Perfil -->
-<div class="w-full bg-surface-cream rounded-2xl p-4 shadow-md mb-5">
+<div class="w-full bg-surface-cream rounded-2xl p-4 shadow-md mb-5 border border-surface-container-high">
 <!-- Contenedor Visual de Ilustración Escénica 1930s -->
-<div class="w-full relative rounded-xl overflow-hidden bg-primary-container mb-3 shadow-inner"><div class="block w-full" id="hero-img-1"><img alt="Campeón del Consumo Responsable UASLP en campus sustentable" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XtWx39SoMVxgEejWadYbtENzLIwei1N0Hc9c-kuDCLBzrpRYQwzjP4w8Ji8fGOS-jkFuRBnkQQtv5X9Nq3o5BKlu9MeBETQIW0i4jrakcKTUG9NL1aM62Q1jHllCyLElo-nXI-F5gz2dGrJsW-Edbj_oz3_bmXZ6L6bzMspXPDZo4G9HZuhc5CYCdegaIsBXQGx-Xe85VeTxZu-R1xeq3fYHIDVvuzOdU_cujT8np-zzMQO3pfrI4rvg"></div><div class="hidden w-full" id="hero-img-2"><img alt="Consumidor en Camino Verde en taller de reciclaje y sustentabilidad" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VcLKhwK77Rf6S2T9dq09cRUSRlRiTL89wFxhnSzTTRIY5dYElzxL0Ycfn4N1E-rWyKvxWfma2NwCfCA401UJ9qqKSozj6h1WlsEx-ZkPyh1WEqQb77gUIP5JZ4e1LfoZvQ_2EChRzbJuQ2qb75fhyfM9VLalfGTt7Rrd25MX0tLAGFe8tmgrxEcmuorZr5fNDzJRxK4q_8Jp5Mj73OnisLieYfUucOSJhOvDeGzSB6ofzUKdYnRxJWqw"></div><div class="hidden w-full" id="hero-img-3"><img alt="Despertar Verde con foco de idea y puerta hacia hábitos sustentables" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VOEtnENGuSGdf-I_hWYbra5BT-MMu4GXaAZ_d6-PgePzoE8CZCfXsuLSV5bpEvy6Mjz6BcT6WCkIFQezrpH9v10G_zRSTTFG2jKm1AuHto8YZnZMHLZLZNrxs3d1Cpe3JNUHxcqvYM4M_j_8DCKsTHsx32RpusnbRk1Chcnx_jnL4vipp_-gsFUcBFuJbFs1TlWrrevEt2lIXji-BvmsGVv17r_jE3-CGmimD6ZV846mRvtBNPyuIthLA"></div><div class="absolute top-2.5 right-2.5 bg-primary/80 backdrop-blur-sm text-secondary-fixed px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md"><span class="material-symbols-outlined text-[14px] text-secondary-fixed">verified</span><span class="font-label-sm text-label-sm uppercase tracking-wide text-pure-white">Oficial UASLP</span></div></div>
+<div class="w-full relative rounded-xl overflow-hidden bg-primary-container mb-3 shadow-inner">
+<div class="block w-full" id="hero-img-1">
+<img alt="Consumidor Responsable y Consciente UASLP" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XtWx39SoMVxgEejWadYbtENzLIwei1N0Hc9c-kuDCLBzrpRYQwzjP4w8Ji8fGOS-jkFuRBnkQQtv5X9Nq3o5BKlu9MeBETQIW0i4jrakcKTUG9NL1aM62Q1jHllCyLElo-nXI-F5gz2dGrJsW-Edbj_oz3_bmXZ6L6bzMspXPDZo4G9HZuhc5CYCdegaIsBXQGx-Xe85VeTxZu-R1xeq3fYHIDVvuzOdU_cujT8np-zzMQO3pfrI4rvg"/>
+</div>
+<div class="hidden w-full" id="hero-img-2">
+<img alt="Consumidor en Transición / Reflexivo UASLP" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VcLKhwK77Rf6S2T9dq09cRUSRlRiTL89wFxhnSzTTRIY5dYElzxL0Ycfn4N1E-rWyKvxWfma2NwCfCA401UJ9qqKSozj6h1WlsEx-ZkPyh1WEqQb77gUIP5JZ4e1LfoZvQ_2EChRzbJuQ2qb75fhyfM9VLalfGTt7Rrd25MX0tLAGFe8tmgrxEcmuorZr5fNDzJRxK4q_8Jp5Mj73OnisLieYfUucOSJhOvDeGzSB6ofzUKdYnRxJWqw"/>
+</div>
+<div class="hidden w-full" id="hero-img-3">
+<img alt="Consumidor Impulsivo / Por Despertar UASLP" class="w-full aspect-[16/9] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VOEtnENGuSGdf-I_hWYbra5BT-MMu4GXaAZ_d6-PgePzoE8CZCfXsuLSV5bpEvy6Mjz6BcT6WCkIFQezrpH9v10G_zRSTTFG2jKm1AuHto8YZnZMHLZLZNrxs3d1Cpe3JNUHxcqvYM4M_j_8DCKsTHsx32RpusnbRk1Chcnx_jnL4vipp_-gsFUcBFuJbFs1TlWrrevEt2lIXji-BvmsGVv17r_jE3-CGmimD6ZV846mRvtBNPyuIthLA"/>
+</div>
+<div class="absolute top-2.5 right-2.5 bg-primary/85 backdrop-blur-sm text-secondary-fixed px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-pure-white">Oficial UASLP</span>
+</div>
+</div>
 <!-- Placa de Identidad del Perfil -->
 <div class="mb-3">
 <div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container mb-1.5 shadow-sm">
 <span class="material-symbols-outlined text-[18px] text-secondary">workspace_premium</span>
-<span class="font-label-sm text-label-sm uppercase font-bold" id="profile-plaque">Perfil Determinado</span>
+<span class="font-label-sm text-label-sm uppercase font-bold" id="profile-plaque">🏆 PERFIL DETERMINADO: CAMPEÓN CONSCIENTE</span>
 </div>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary leading-snug" id="profile-name">
-        Consumidor Responsable y Consciente
-      </h3>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary leading-snug font-bold" id="profile-name">
+  Consumidor Responsable y Consciente
+</h3>
 <div class="flex items-center gap-2 mt-1">
-<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm" id="profile-points">
-          36 - 40 Puntos (Nivel Oro Ambiental)
-        </span>
-<span class="flex items-center text-secondary text-[14px]">
-<span class="material-symbols-outlined text-[16px]">eco</span>
-<span class="material-symbols-outlined text-[16px]">eco</span>
-<span class="material-symbols-outlined text-[16px]">eco</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold" id="profile-points">
+  36 - 40 Puntos (Nivel Oro Ambiental UASLP)
+</span>
+<span class="flex items-center text-secondary text-[14px]" id="profile-stars">
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
 </span>
 </div>
 </div>
-<!-- Resumen Narrativo Dinámico -->
-<div class="bg-surface-container-low rounded-xl p-3.5 mb-4 shadow-sm">
-<p class="font-body-md text-body-md text-on-surface" id="profile-desc">
-        ¡Eres el alma verde del campus! Comprendes que cada compra es un voto por el planeta que queremos. Priorizas lo local, evitas plásticos de un solo uso, reparas antes de tirar y cuidas el agua con devoción.
-      </p>
+<!-- Discurso Oficial Específico -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 mb-4 shadow-sm border-l-4 border-[#00205B]">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed" id="profile-speech">
+  ¡Felicidades, eres un referente de sustentabilidad en la UASLP! Tus decisiones diarias reflejan un profundo compromiso con el planeta: priorizas el consumo local, evitas plásticos de un solo uso, alargas la vida de tus prendas y cuidas el agua y la energía. Continúa inspirando a tu comunidad universitaria.
+</p>
 </div>
-<!-- Desglose Rápido por Ejes de Consumo -->
+<!-- Desglose por Ejes Clave -->
 <div class="w-full">
 <div class="flex items-center justify-between mb-2">
-<span class="font-label-md text-label-md text-primary uppercase">Diagnóstico por Ejes Clave</span>
+<span class="font-label-md text-label-md text-primary uppercase font-bold">Diagnóstico por Ejes Clave</span>
 <span class="font-label-sm text-label-sm text-on-surface-variant">4 Dimensiones</span>
 </div>
 <div class="space-y-2.5">
@@ -73,9 +90,9 @@
 <div class="flex items-center justify-between text-on-surface mb-1">
 <div class="flex items-center gap-1.5 min-w-0">
 <span class="text-[16px]">💧</span>
-<span class="font-label-md text-label-md truncate">Cuidado del Agua y Energía</span>
+<span class="font-label-md text-label-md truncate font-medium">Cuidado del Agua y Energía</span>
 </div>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold ml-2" id="metric-val-1">95% • Maestro</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-2" id="metric-val-1">95% • Maestro</span>
 </div>
 <div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
 <div class="h-full bg-secondary-fixed-dim rounded-full transition-all duration-500" id="bar-1" style="width: 95%;"></div>
@@ -86,9 +103,9 @@
 <div class="flex items-center justify-between text-on-surface mb-1">
 <div class="flex items-center gap-1.5 min-w-0">
 <span class="text-[16px]">🛍️</span>
-<span class="font-label-md text-label-md truncate">Compras Locales y Moda Circular</span>
+<span class="font-label-md text-label-md truncate font-medium">Compras Locales y Moda Circular</span>
 </div>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold ml-2" id="metric-val-2">90% • Aliado</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-2" id="metric-val-2">90% • Aliado</span>
 </div>
 <div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
 <div class="h-full bg-secondary-fixed-dim rounded-full transition-all duration-500" id="bar-2" style="width: 90%;"></div>
@@ -99,9 +116,9 @@
 <div class="flex items-center justify-between text-on-surface mb-1">
 <div class="flex items-center gap-1.5 min-w-0">
 <span class="text-[16px]">♻️</span>
-<span class="font-label-md text-label-md truncate">Separación y Cero Desperdicio</span>
+<span class="font-label-md text-label-md truncate font-medium">Separación y Cero Desperdicio</span>
 </div>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold ml-2" id="metric-val-3">88% • Guardián</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-2" id="metric-val-3">88% • Guardián</span>
 </div>
 <div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
 <div class="h-full bg-secondary-fixed-dim rounded-full transition-all duration-500" id="bar-3" style="width: 88%;"></div>
@@ -112,9 +129,9 @@
 <div class="flex items-center justify-between text-on-surface mb-1">
 <div class="flex items-center gap-1.5 min-w-0">
 <span class="text-[16px]">🚲</span>
-<span class="font-label-md text-label-md truncate">Movilidad y Papel Digital</span>
+<span class="font-label-md text-label-md truncate font-medium">Movilidad y Papel Digital</span>
 </div>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold ml-2" id="metric-val-4">92% • Rodante</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-2" id="metric-val-4">92% • Rodante</span>
 </div>
 <div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
 <div class="h-full bg-secondary-fixed-dim rounded-full transition-all duration-500" id="bar-4" style="width: 92%;"></div>
@@ -130,87 +147,101 @@
 <span class="material-symbols-outlined text-[18px]">rocket_launch</span>
 </div>
 <div>
-<h4 class="font-headline-md text-headline-md text-primary leading-tight">¿Cómo subir aún más de nivel?</h4>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Tu Guía de Acción Rápida UASLP</span>
+<h4 class="font-headline-md text-headline-md text-primary leading-tight font-bold" id="action-heading">¿Cómo mantener e impulsar tu impacto?</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recomendaciones Oficiales de la Agenda Ambiental UASLP</span>
 </div>
 </div>
-<div class="space-y-2.5">
+<div class="space-y-2.5" id="actions-container">
+<!-- Generado dinámicamente -->
 <div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
-<span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0">1</span>
+<span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0 font-bold">1</span>
 <div>
-<p class="font-title-md text-title-md text-primary">Suma a tu manada</p>
-<p class="font-body-md text-body-md text-on-surface-variant">Invita a 2 compañeros de tu facultad a traer su termo y lonchera reutilizable a la cafetería universitaria.</p>
-</div>
-</div>
-<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
-<span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0">2</span>
-<div>
-<p class="font-title-md text-title-md text-primary">Mercadito Universitario</p>
-<p class="font-body-md text-body-md text-on-surface-variant">Visita el tianguis agroecológico y de comercio justo en los eventos convocados por la Agenda Ambiental.</p>
+<p class="font-title-md text-title-md text-primary font-bold">Suma a tu manada en el campus</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Invita a tus compañeros de facultad a portar siempre termo, vaso y cubiertos reutilizables en cafeterías universitarias.</p>
 </div>
 </div>
 <div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
-<span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0">3</span>
+<span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0 font-bold">2</span>
 <div>
-<p class="font-title-md text-title-md text-primary">Embajador Verde</p>
-<p class="font-body-md text-body-md text-on-surface-variant">Participa en los talleres extracurriculares de reparación, compostaje y ecotécnias de la UASLP.</p>
+<p class="font-title-md text-title-md text-primary font-bold">Mercadito Universitario y Tianguis Agroecológico</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Consume productos de temporada, comercio justo y artesanales en las jornadas convocadas por la Agenda Ambiental UASLP.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0 font-bold">3</span>
+<div>
+<p class="font-title-md text-title-md text-primary font-bold">Conviértete en Embajador Verde</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Inscríbete y participa en los talleres extracurriculares de reparación, huertos urbanos y compostaje universitario.</p>
 </div>
 </div>
 </div>
 </div>
 <!-- Cuadro Comparativo de los 3 Perfiles -->
-<div class="w-full bg-surface-cream rounded-2xl p-4 shadow-sm mb-5">
+<div class="w-full bg-surface-cream rounded-2xl p-4 shadow-sm mb-5 border border-surface-container-high">
 <div class="flex items-center justify-between mb-3">
 <div>
-<h4 class="font-headline-md text-headline-md text-primary leading-tight">Escala de Conciencia de Consumo</h4>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Explora el espectro de perfiles universitarios</span>
+<h4 class="font-headline-md text-headline-md text-primary leading-tight font-bold">Escala de Conciencia de Consumo</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Toca cualquier perfil para consultar su diagnóstico completo</span>
 </div>
 <span class="material-symbols-outlined text-secondary text-[24px]">psychology_alt</span>
 </div>
 <div class="space-y-2">
 <!-- Mini Perfil 1 -->
-<button class="w-full text-left bg-surface-container-lowest p-2.5 rounded-xl shadow-sm flex items-center gap-3 transition-colors hover:bg-surface-container" onclick="selectProfile(1)" type="button">
+<button class="w-full text-left bg-surface-container-lowest p-2.5 rounded-xl shadow-sm flex items-center gap-3 transition-colors hover:bg-surface-container border border-transparent hover:border-secondary-fixed" onclick="selectProfile(1)" type="button">
 <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container p-0.5 flex-shrink-0 shadow-sm">
-<img alt="Mascota Campeón Consciente" class="w-full h-full object-cover rounded-full bg-surface-cream" src="https://lh3.googleusercontent.com/aida/AEtjO1UbaObGuZvlfwYoHEhf_STgnmmZ_rL4_ONZ4sA-YkQ82chHCR7tyfyz3yM5HiylQq1spe8U9r3IrwKwtCuUw2TGBe9UBPYhOR9s8QCimQ2cdADx4DJNohnTeSJpUZIspRs9lpSgZ47bG0gVAiTJJ3CLdL_RcsE1cDzaZE6MtZ5MMEZU3vmkmu4cQU8tKKAbP_Hh-eeWt5mdEXbCnGcrpAurNxqmm-GfYxQwpBI6F5rYwzRM2mRnMRDMUAg">
+<img alt="Campeón Consciente" class="w-full h-full object-cover rounded-full bg-surface-cream" src="https://lh3.googleusercontent.com/aida/AEtjO1XtWx39SoMVxgEejWadYbtENzLIwei1N0Hc9c-kuDCLBzrpRYQwzjP4w8Ji8fGOS-jkFuRBnkQQtv5X9Nq3o5BKlu9MeBETQIW0i4jrakcKTUG9NL1aM62Q1jHllCyLElo-nXI-F5gz2dGrJsW-Edbj_oz3_bmXZ6L6bzMspXPDZo4G9HZuhc5CYCdegaIsBXQGx-Xe85VeTxZu-R1xeq3fYHIDVvuzOdU_cujT8np-zzMQO3pfrI4rvg"/>
 </div>
 <div class="min-w-0 flex-1">
 <div class="flex items-center justify-between">
-<span class="font-title-md text-title-md text-primary truncate">1. Campeón Consciente</span>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold">36-40 pts</span>
+<span class="font-title-md text-title-md text-primary truncate font-bold">1. Campeón Consciente</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">36-40 pts</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant truncate">Cultura de impacto positivo consolidada.</p>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Cultura de sustentabilidad consolidada y referente en el campus.</p>
 </div>
 </button>
 <!-- Mini Perfil 2 -->
-<button class="w-full text-left bg-surface-container-lowest p-2.5 rounded-xl shadow-sm flex items-center gap-3 transition-colors hover:bg-surface-container" onclick="selectProfile(2)" type="button">
+<button class="w-full text-left bg-surface-container-lowest p-2.5 rounded-xl shadow-sm flex items-center gap-3 transition-colors hover:bg-surface-container border border-transparent hover:border-secondary-fixed" onclick="selectProfile(2)" type="button">
 <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container p-0.5 flex-shrink-0 shadow-sm">
-<img alt="Mascota En Camino Verde" class="w-full h-full object-cover rounded-full bg-surface-cream" src="https://lh3.googleusercontent.com/aida/AEtjO1X7UAUr7FaYA6r8SSCvSpeofDBshVFhvDOzUnZqr9TNDF3Nx6mBrMP_I_Yjsu_cilCaF635e_LfBWL-OU0UY6sxzCYZVf86PK5Hj2rTdDONnC_keTOi0mQjst2yyd9ele54444OLPMTsu6oXtepD0-OU39qdrrWY1qvTEEmFflbXge4Jif3o9EHah9gLtOH7o5QW_RfRvfckzHTv2-z5SrUQ-1UwmfeUmhrWNwalK3qFIHlD8ocTl1_Q1c">
+<img alt="En Camino Verde" class="w-full h-full object-cover rounded-full bg-surface-cream" src="https://lh3.googleusercontent.com/aida/AEtjO1VcLKhwK77Rf6S2T9dq09cRUSRlRiTL89wFxhnSzTTRIY5dYElzxL0Ycfn4N1E-rWyKvxWfma2NwCfCA401UJ9qqKSozj6h1WlsEx-ZkPyh1WEqQb77gUIP5JZ4e1LfoZvQ_2EChRzbJuQ2qb75fhyfM9VLalfGTt7Rrd25MX0tLAGFe8tmgrxEcmuorZr5fNDzJRxK4q_8Jp5Mj73OnisLieYfUucOSJhOvDeGzSB6ofzUKdYnRxJWqw"/>
 </div>
 <div class="min-w-0 flex-1">
 <div class="flex items-center justify-between">
-<span class="font-title-md text-title-md text-primary truncate">2. En Camino Verde</span>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold">25-35 pts</span>
+<span class="font-title-md text-title-md text-primary truncate font-bold">2. En Camino Verde</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">25-35 pts</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant truncate">Reflexiona y transforma sus hábitos día a día.</p>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Reflexiona y transforma sus hábitos de consumo día a día.</p>
 </div>
 </button>
 <!-- Mini Perfil 3 -->
-<button class="w-full text-left bg-surface-container-lowest p-2.5 rounded-xl shadow-sm flex items-center gap-3 transition-colors hover:bg-surface-container" onclick="selectProfile(3)" type="button">
+<button class="w-full text-left bg-surface-container-lowest p-2.5 rounded-xl shadow-sm flex items-center gap-3 transition-colors hover:bg-surface-container border border-transparent hover:border-secondary-fixed" onclick="selectProfile(3)" type="button">
 <div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container p-0.5 flex-shrink-0 shadow-sm">
-<img alt="Mascota Despertar Verde" class="w-full h-full object-cover rounded-full bg-surface-cream" src="https://lh3.googleusercontent.com/aida/AEtjO1W-EsokS3WA0LrcK2yrFKg3-_hcbrRYbfzW1eKg0_05OqXTNEgN35bDIM2ZnnctbXEw7kB2IPBfXTkeFGH-ZFdG1Tv51CYZZ4iqtzAdKwIEKVTIP4B8VU2qILxB3KcjIc1Sh3x8trqG9-GB34fSC2E-v3cqSJ7MzjHQOiQVREmfK1NCXOw-RNC6OcdIeYKamdWI6HwfJtcjz9qJh-a43V5LTPM19PZ0lbJf9mvuVFpdRBf0e5j3dyo5nz8">
+<img alt="Despertar Verde" class="w-full h-full object-cover rounded-full bg-surface-cream" src="https://lh3.googleusercontent.com/aida/AEtjO1VOEtnENGuSGdf-I_hWYbra5BT-MMu4GXaAZ_d6-PgePzoE8CZCfXsuLSV5bpEvy6Mjz6BcT6WCkIFQezrpH9v10G_zRSTTFG2jKm1AuHto8YZnZMHLZLZNrxs3d1Cpe3JNUHxcqvYM4M_j_8DCKsTHsx32RpusnbRk1Chcnx_jnL4vipp_-gsFUcBFuJbFs1TlWrrevEt2lIXji-BvmsGVv17r_jE3-CGmimD6ZV846mRvtBNPyuIthLA"/>
 </div>
 <div class="min-w-0 flex-1">
 <div class="flex items-center justify-between">
-<span class="font-title-md text-title-md text-primary truncate">3. Despertar Verde</span>
-<span class="font-label-sm text-label-sm text-secondary-container-variant font-bold">10-24 pts</span>
+<span class="font-title-md text-title-md text-primary truncate font-bold">3. Despertar Verde</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">10-24 pts</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant truncate">¡El foco se enciende! Listo para dar sus primeros pasos.</p>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">¡El primer paso es darse cuenta! Listo para actuar.</p>
 </div>
 </button>
 </div>
 </div>
-<!-- Botones de Acción -->
-<div class="flex flex-col gap-2.5 mb-6"><button class="w-full py-3.5 px-4 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase tracking-wide flex items-center justify-center gap-2 shadow-md hover:bg-secondary-fixed transition-all active:translate-y-0.5" onclick="handleShare()" type="button"><span class="material-symbols-outlined text-[20px]">share</span><span class="">Compartir Mi Resultado Oficial 🏆</span></button><button class="w-full py-3.5 px-4 rounded-xl bg-primary-container text-pure-white font-label-lg text-label-lg uppercase tracking-wide flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:translate-y-0.5" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" type="button"><span class="material-symbols-outlined text-[20px] text-secondary-fixed">replay</span><span class="">Repetir la Trivia 🔄</span></button><a class="w-full py-3 px-4 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container-highest transition-all text-center" href="#" onclick="alert('Redirigiendo a las iniciativas y proyectos de la Agenda Ambiental UASLP.'); return false;"><span class="material-symbols-outlined text-[18px] text-success-mint">eco</span><span class="">Conoce la Agenda Ambiental UASLP 🌱</span></a></div>
+<!-- Botones de Acción Funcional -->
+<div class="flex flex-col gap-2.5 mb-6">
+<button class="w-full py-3.5 px-4 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase tracking-wide flex items-center justify-center gap-2 shadow-md hover:bg-secondary-fixed transition-all active:translate-y-0.5 font-bold" onclick="handleShare()" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span>Compartir Mi Resultado Oficial 🏆</span>
+</button>
+<a class="w-full py-3.5 px-4 rounded-xl bg-primary-container text-pure-white font-label-lg text-label-lg uppercase tracking-wide flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:translate-y-0.5 font-bold text-center" href="../inicio_trivia_consumo_responsable_uaslp/code.html" onclick="(function(){try{for(var i=1;i<=10;i++)localStorage.removeItem(&#39;trivia_uaslp_q&#39;+i);}catch(e){}})();">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">replay</span>
+<span>Repetir la Trivia 🔄</span>
+</a>
+<a class="w-full py-3.5 px-4 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container-highest transition-all text-center font-bold" href="https://ambiental.uaslp.mx" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-success-mint">eco</span>
+<span>Conoce la Agenda Ambiental UASLP 🌱</span>
+</a>
+</div>
 <!-- Pie Institucional Homologado -->
 <footer class="w-full pt-4 text-center">
 <div class="w-12 h-1 bg-secondary-container rounded-full mx-auto mb-3"></div>
@@ -218,7 +249,7 @@
 <span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
 <p class="font-label-md text-label-md font-bold">Red Universitaria de Sustentabilidad • Agenda Ambiental UASLP</p>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto">Universidad Autónoma de San Luis Potosí | Evaluación formativa de cultura ambiental. Respuestas 100% anónimas.</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto">Universidad Autónoma de San Luis Potosí | Evaluación formativa de cultura ambiental. Respuestas 100% anónimas y confidenciales.</p>
 </footer>
 </div>
 <script>
@@ -227,42 +258,62 @@
       plaque: "🏆 PERFIL DETERMINADO: CAMPEÓN CONSCIENTE",
       name: "Consumidor Responsable y Consciente",
       points: "36 - 40 Puntos (Nivel Oro Ambiental UASLP)",
-      desc: "¡Eres el alma verde del campus! Comprendes que cada compra es un voto por el planeta que queremos. Priorizas lo local, evitas plásticos de un solo uso, reparas antes de tirar y cuidas el agua con devoción.",
+      speech: "¡Felicidades, eres un referente de sustentabilidad en la UASLP! Tus decisiones diarias reflejan un profundo compromiso con el planeta: priorizas el consumo local, evitas plásticos de un solo uso, alargas la vida de tus prendas y cuidas el agua y la energía. Continúa inspirando a tu comunidad universitaria.",
+      heading: "¿Cómo mantener e impulsar tu impacto?",
+      stars: '<span class="material-symbols-outlined text-[16px] text-secondary">eco</span><span class="material-symbols-outlined text-[16px] text-secondary">eco</span><span class="material-symbols-outlined text-[16px] text-secondary">eco</span>',
       metrics: [
-        { label: "95% • Maestro del Grifo", pct: "95%" },
+        { label: "95% • Maestro del Cuidado", pct: "95%" },
         { label: "90% • Aliado de Productores", pct: "90%" },
         { label: "88% • Guardián del Reciclaje", pct: "88%" },
-        { label: "92% • Rodante Sustentable", pct: "92%" }
+        { label: "92% • Movilidad Sustentable", pct: "92%" }
+      ],
+      actions: [
+        { title: "Suma a tu manada en el campus", desc: "Invita a tus compañeros de facultad a portar siempre termo, vaso y cubiertos reutilizables en cafeterías universitarias." },
+        { title: "Mercadito Universitario y Tianguis Agroecológico", desc: "Consume productos de temporada, comercio justo y artesanales en las jornadas convocadas por la Agenda Ambiental UASLP." },
+        { title: "Conviértete en Embajador Verde", desc: "Inscríbete y participa en los talleres extracurriculares de reparación, huertos urbanos y compostaje universitario." }
       ]
     },
     2: {
       plaque: "🌱 PERFIL EN EVOLUCIÓN: EN CAMINO VERDE",
       name: "Consumidor en Transición / Reflexivo",
       points: "25 - 35 Puntos (Nivel Plata Ambiental UASLP)",
-      desc: "¡Vas con paso firme! Cuestionas tus decisiones cotidianas, portas termo con orgullo y separas tus residuos cada vez mejor. Con pequeños ajustes en compras de ropa y movilidad serás imparable.",
+      speech: "¡Vas por un excelente camino! Tienes una conciencia activa y reconoces el impacto de tus hábitos de consumo. Aunque ya implementas prácticas sustentables, aún hay oportunidades en la gestión de residuos, el transporte activo y la reducción de compras impulsivas. Pequeños cambios cotidianos te llevarán al nivel óptimo.",
+      heading: "¿Cómo subir al Nivel Campeón?",
+      stars: '<span class="material-symbols-outlined text-[16px] text-secondary">eco</span><span class="material-symbols-outlined text-[16px] text-secondary">eco</span><span class="material-symbols-outlined text-[16px] text-outline-variant">eco</span>',
       metrics: [
-        { label: "80% • Guardián Consciente", pct: "80%" },
+        { label: "78% • Ahorro Consciente", pct: "78%" },
         { label: "72% • Comprador Selectivo", pct: "72%" },
-        { label: "75% • Separador Activo", pct: "75%" },
-        { label: "70% • Explorador Verde", pct: "70%" }
+        { label: "75% • Separador en Práctica", pct: "75%" },
+        { label: "70% • Explorador Sustentable", pct: "70%" }
+      ],
+      actions: [
+        { title: "Pausa reflexiva antes de comprar", desc: "Aplica la regla de los 30 segundos: ¿realmente lo necesito o es un antojo momentáneo en empaque no reciclable?" },
+        { title: "Adopta el Punto Verde de tu Facultad", desc: "Asegúrate de depositar PET, aluminio y papel limpios y compactados en los contenedores específicos del campus." },
+        { title: "Talleres prácticos de Agenda Ambiental", desc: "Asiste a las clínicas de reparación de ropa (re-fashion) y mantenimiento de bicicletas organizadas en la UASLP." }
       ]
     },
     3: {
       plaque: "💡 NUEVO HORIZONTE: DESPERTAR VERDE",
       name: "Consumidor Impulsivo / Por Despertar",
       points: "10 - 24 Puntos (Nivel Semilla Ambiental UASLP)",
-      desc: "¡El foco se acaba de encender! Las prisas y promociones a veces te hacen caer en compras desechables, pero tu curiosidad ambiental está viva. Estás en el momento perfecto para descubrir la magia de reusar y ahorrar.",
+      speech: "¡El primer paso hacia el cambio es darse cuenta! Actualmente tus elecciones suelen responder a la comodidad y la inmediatez, lo cual genera una mayor huella ambiental. Este diagnóstico es una oportunidad perfecta para iniciar: comienza cargando tu termo reutilizable, separando tus residuos y reflexionando antes de comprar.",
+      heading: "¿Cómo dar tus primeros pasos verdes?",
+      stars: '<span class="material-symbols-outlined text-[16px] text-secondary">eco</span><span class="material-symbols-outlined text-[16px] text-outline-variant">eco</span><span class="material-symbols-outlined text-[16px] text-outline-variant">eco</span>',
       metrics: [
-        { label: "55% • Iniciando Hábitos", pct: "55%" },
-        { label: "48% • Impulsivo en Pausa", pct: "48%" },
-        { label: "50% • Conociendo el Bote", pct: "50%" },
-        { label: "58% • Despertar Activo", pct: "58%" }
+        { label: "52% • Oportunidad en Ahorro", pct: "52%" },
+        { label: "45% • Por Descubrir Local", pct: "45%" },
+        { label: "48% • Iniciando Separación", pct: "48%" },
+        { label: "55% • Potencial en Movilidad", pct: "55%" }
+      ],
+      actions: [
+        { title: "El kit básico: Tu termo siempre contigo", desc: "Evita entre 3 y 5 botellas de plástico desechables a la semana rellenando agua purificada en los bebederos del campus." },
+        { title: "Di adiós a los desechables de un solo uso", desc: "Rechaza popotes, bolsas plásticas y cubiertos desechables en los locales cercanos a tu centro universitario." },
+        { title: "Conéctate a las redes de Agenda Ambiental", desc: "Sigue las actividades de sustentabilidad universitaria para aprender ecotips sencillos que además cuidarán tu bolsillo." }
       ]
     }
   };
 
   function selectProfile(num) {
-    // Alternar tabs
     for (let i = 1; i <= 3; i++) {
       const btn = document.getElementById('tab-btn-' + i);
       const img = document.getElementById('hero-img-' + i);
@@ -277,18 +328,30 @@
       }
     }
 
-    // Actualizar contenido
     const d = profileData[num];
     document.getElementById('profile-plaque').innerText = d.plaque;
     document.getElementById('profile-name').innerText = d.name;
     document.getElementById('profile-points').innerText = d.points;
-    document.getElementById('profile-desc').innerText = d.desc;
+    document.getElementById('profile-speech').innerText = d.speech;
+    document.getElementById('action-heading').innerText = d.heading;
+    document.getElementById('profile-stars').innerHTML = d.stars;
 
     for (let j = 1; j <= 4; j++) {
       const m = d.metrics[j - 1];
       document.getElementById('metric-val-' + j).innerText = m.label;
       document.getElementById('bar-' + j).style.width = m.pct;
     }
+
+    const actionsContainer = document.getElementById('actions-container');
+    actionsContainer.innerHTML = d.actions.map((act, idx) => `
+      <div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-start gap-2.5">
+        <span class="w-6 h-6 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-label-md text-label-md flex-shrink-0 font-bold">${idx + 1}</span>
+        <div>
+          <p class="font-title-md text-title-md text-primary font-bold">${act.title}</p>
+          <p class="font-body-md text-body-md text-on-surface-variant">${act.desc}</p>
+        </div>
+      </div>
+    `).join('');
   }
 
   function handleShare() {
@@ -299,13 +362,22 @@
         url: window.location.href
       }).catch(function() {});
     } else {
+      navigator.clipboard ? navigator.clipboard.writeText(window.location.href) : null;
       alert('¡Enlace de resultado copiado al portapapeles! Compártelo con tu comunidad universitaria.');
     }
   }
-</script></main>
-
-
-
+</script>
+</main>
+<script>/* scoring */
+(function(){var PTS={A:1,B:2,C:3,D:4},t=0,n=0;
+for(var i=1;i<=10;i++){var v=null;try{v=localStorage.getItem('trivia_uaslp_q'+i);}catch(e){}if(PTS[v]){t+=PTS[v];n++;}}
+var el=document.getElementById('profile-points');
+if(n<10){if(el)el.innerText='Respondiste '+n+' de 10 preguntas · completa la trivia para obtener tu perfil';return;}
+var p=t>=36?1:(t>=25?2:3);selectProfile(p);
+var lv=['','Nivel Oro Ambiental UASLP','Nivel Plata Ambiental UASLP','Nivel Semilla Ambiental UASLP'][p];
+if(el)el.innerText='Tu puntaje: '+t+' / 40 Puntos ('+lv+')';
+document.documentElement.setAttribute('data-score',t);document.documentElement.setAttribute('data-profile',p);})();
+</script>
 <script>/* netlify-nav */
 document.querySelectorAll('button').forEach(function(x){if(/Repetir/.test(x.textContent)){x.onclick=function(){location.href='../inicio_trivia_consumo_responsable_uaslp/code.html';};}});
 </script>

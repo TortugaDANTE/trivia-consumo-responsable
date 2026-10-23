@@ -139,9 +139,21 @@
     });
   });
 </script></main>
-<script>/* netlify-nav */
-(function(){var b=document.querySelectorAll('button');var go=function(u){return function(e){e.preventDefault();location.href=u;}};
-b[0]&&b[0].addEventListener('click',go('../pregunta_7_de_10_test_de_consumo_responsable_uaslp/code.html'));var last=b[b.length-1],mid=b[b.length-2];
-mid&&mid.addEventListener('click',go('../pregunta_7_de_10_test_de_consumo_responsable_uaslp/code.html'));last&&last.addEventListener('click',go('../pregunta_9_de_10_test_de_consumo_responsable_uaslp/code.html'));})();
+<script>/* netlify-nav + scoring */
+(function(){var Q=8,KEY='trivia_uaslp_q'+Q,PTS={A:1,B:2,C:3,D:4};
+var radios=document.querySelectorAll('input[type=radio]');
+try{var saved=localStorage.getItem(KEY);}catch(e){}
+radios.forEach(function(r){if(saved&&r.value===saved)r.checked=true;
+r.addEventListener('change',function(){try{localStorage.setItem(KEY,r.value);}catch(e){}var m=document.getElementById('need-answer');if(m)m.remove();});});
+var b=document.querySelectorAll('button'),back=b[0],next=document.getElementById('btn-next')||b[b.length-1],prev=b[b.length-2];
+function go(u){return function(e){e.preventDefault();location.href=u;}}
+back&&back.addEventListener('click',go('../pregunta_7_de_10_test_de_consumo_responsable_uaslp/code.html'));
+prev&&prev!==back&&prev!==next&&prev.addEventListener('click',go('../pregunta_7_de_10_test_de_consumo_responsable_uaslp/code.html'));
+next&&next.addEventListener('click',function(e){e.preventDefault();
+var c=document.querySelector('input[type=radio]:checked');
+if(!c){if(!document.getElementById('need-answer')){var m=document.createElement('p');m.id='need-answer';m.setAttribute('role','alert');
+m.style.cssText='color:#ba1a1a;font-weight:700;text-align:center;margin:8px 0;font-size:14px';m.textContent='Selecciona una respuesta para continuar.';
+next.parentNode.parentNode.insertBefore(m,next.parentNode);}return;}
+try{localStorage.setItem(KEY,c.value);}catch(e){}location.href='../pregunta_9_de_10_test_de_consumo_responsable_uaslp/code.html';});})();
 </script>
 </body></html>

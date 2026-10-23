@@ -17,7 +17,7 @@
 <!-- Edition Badge -->
 <div class="inline-flex items-center space-x-1.5 bg-uaslp-blue text-white px-3.5 py-1 rounded-full mb-3 shadow-sm border border-uaslp-gold">
 <span class="material-symbols-outlined text-[16px] text-uaslp-gold" style="font-variation-settings: &quot;FILL&quot; 1;">eco</span>
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-white font-bold">Temporada Universitaria 2024</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-white font-bold">UASLP SOSTENIBLE</span>
 </div>
 <!-- Main Title -->
 <h1 class="font-display-lg-mobile text-display-lg-mobile text-uaslp-blue leading-tight uppercase font-extrabold tracking-tight">
@@ -108,7 +108,7 @@
 <span class="material-symbols-outlined text-[24px] text-uaslp-gold group-hover:translate-x-1 transition-transform" style="font-variation-settings: &quot;FILL&quot; 1;">arrow_forward</span>
 </button>
 <!-- Secondary Button with clean white background and UASLP blue text -->
-<button class="w-full py-3 px-6 rounded-2xl bg-white border border-gray-300 text-uaslp-blue font-title-md text-label-lg shadow-sm active:translate-y-0.5 hover:border-uaslp-gold transition-all duration-150 flex items-center justify-center space-x-1.5" id="btn-modal-profiles" data-target="privacidad-datos-anonimato" onclick="window.location.href='../manejo_de_informaci_n_y_anonimato_uaslp/code.html'"><span class="material-symbols-outlined text-[20px] text-uaslp-gold">verified_user</span>
+<button class="w-full py-3 px-6 rounded-2xl bg-white border border-gray-300 text-uaslp-blue font-title-md text-label-lg shadow-sm active:translate-y-0.5 hover:border-uaslp-gold transition-all duration-150 flex items-center justify-center space-x-1.5" id="btn-transparencia" data-target="privacidad-datos-anonimato" onclick="window.location.href='../manejo_de_informaci_n_y_anonimato_uaslp/code.html'"><span class="material-symbols-outlined text-[20px] text-uaslp-gold">verified_user</span>
 <span class="font-bold">Transparencia y Privacidad de Datos</span></button>
 </section>
 <!-- University Footer & Environmental Impact Counter -->
@@ -119,51 +119,9 @@
 </div>
 <p class="font-body-md text-label-sm text-uaslp-black/70">Tus datos son 100% anónimos y contribuyen formalmente a las metas de la Agenda 2030 del estado.</p>
 </footer>
-<!-- Modal Sheet for Scoring Criteria (Hidden by default, triggered by JS) -->
-<div class="fixed inset-0 bg-uaslp-blue/60 backdrop-blur-sm z-50 flex items-end justify-center transition-opacity duration-200 opacity-0 pointer-events-none" id="criteria-modal">
-<div class="w-full max-w-md bg-white border-t-2 border-uaslp-gold rounded-t-3xl p-5 shadow-2xl transform transition-transform duration-200 space-y-4 translate-y-full">
-<div class="w-12 h-1 bg-uaslp-gold/40 rounded-full mx-auto"></div>
-<div class="flex items-center justify-between">
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-uaslp-blue font-bold">¿Cómo te evaluamos?</h3>
-<button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-uaslp-blue hover:bg-gray-200" id="btn-close-modal">
-<span class="material-symbols-outlined text-[18px]">close</span>
-</button>
-</div>
-<div class="space-y-3 font-body-md text-body-md text-uaslp-black">
-<div class="p-3 bg-surface-container-low border border-uaslp-gold/30 rounded-xl">
-<p class="font-bold text-uaslp-blue font-title-md flex items-center space-x-1.5">
-<span class="w-2 h-2 rounded-full bg-uaslp-gold inline-block mr-1.5"></span>1. Consumo de un solo uso
-            </p>
-<p class="text-label-md mt-0.5 text-uaslp-black/80">Evalúa botellas PET, embalaje excesivo y bolsas no biodegradables.</p>
-</div>
-<div class="p-3 bg-surface-container-low border border-uaslp-gold/30 rounded-xl">
-<p class="font-bold text-uaslp-blue font-title-md flex items-center space-x-1.5">
-<span class="w-2 h-2 rounded-full bg-uaslp-gold inline-block mr-1.5"></span>2. Reparación y Segunda Mano
-            </p>
-<p class="text-label-md mt-0.5 text-uaslp-black/80">Fomenta la economía circular y la extensión de vida útil de tus artículos.</p>
-</div>
-<div class="p-3 bg-surface-container-low border border-uaslp-gold/30 rounded-xl">
-<p class="font-bold text-uaslp-blue font-title-md flex items-center space-x-1.5">
-<span class="w-2 h-2 rounded-full bg-uaslp-gold inline-block mr-1.5"></span>3. Energía y Eficiencia Local
-            </p>
-<p class="text-label-md mt-0.5 text-uaslp-black/80">Apoyo a productores potosinos y huella de carbono asociada.</p>
-</div>
-</div>
-<button class="w-full py-3 bg-uaslp-blue text-white border border-uaslp-gold rounded-xl font-title-md text-label-lg shadow-sm font-bold flex items-center justify-center space-x-1.5" id="btn-modal-ack">
-<span class="">Entendido, ¡estoy listo!</span>
-<span class="material-symbols-outlined text-[18px] text-uaslp-gold">check_circle</span>
-</button>
-</div>
-</div>
-</div>
 <script>
   (function() {
     const btnStart = document.getElementById('btn-start-trivia');
-    const modal = document.getElementById('criteria-modal');
-    const modalSheet = modal.querySelector('div');
-    const btnOpenModal = document.getElementById('btn-modal-profiles');
-    const btnCloseModal = document.getElementById('btn-close-modal');
-    const btnAck = document.getElementById('btn-modal-ack');
 
     // Fun rubber-hose button press feedback
     btnStart.addEventListener('click', function() {
@@ -175,22 +133,6 @@
       }, 150);
     });
 
-    function openModal() {
-      modal.classList.remove('opacity-0', 'pointer-events-none');
-      modalSheet.classList.remove('translate-y-full');
-    }
-
-    function closeModal() {
-      modal.classList.add('opacity-0', 'pointer-events-none');
-      modalSheet.classList.add('translate-y-full');
-    }
-
-    btnOpenModal.addEventListener('click', openModal);
-    btnCloseModal.addEventListener('click', closeModal);
-    btnAck.addEventListener('click', closeModal);
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) closeModal();
-    });
   })();
 </script></main>
 

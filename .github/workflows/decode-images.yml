@@ -1,0 +1,25 @@
+name: decode-images
+on:
+  push:
+    paths: ['img_b64/**', '.github/workflows/decode-images.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode base64 images
+        run: |
+          mkdir -p img
+          for f in img_b64/*.b64; do base64 -d "$f" > "img/$(basename "$f" .b64)"; done
+          ls -la img
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img
+          git diff --cached --quiet || git commit -m "Decode illustrations to img/*.webp"
+          git push
